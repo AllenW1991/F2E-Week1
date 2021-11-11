@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-click">
+      <rect width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="click" clip-path="url(#clip-click)">
+    <g id="Group_8" data-name="Group 8" transform="translate(13 78)">
+      <path id="one-finger-click" d="M186.406,32v4h1V32Zm6.4,2.578L189.7,37.094l.628.778,3.109-2.519-.628-.775Zm2.006,6.734-3.9-.9-.225.975,3.9.9Zm-15.591.975,3.9-.9-.225-.975-3.9.9Zm1.15-6.934,3.109,2.519.628-.778L181,34.575ZM192.4,44.491a1.5,1.5,0,1,0-3,0V49h-1V39.509a1.5,1.5,0,1,0-3,0V49.8c-2.059-2.2-4.769-4.619-5.878-3.5-1.088,1.094,1.716,4.106,5.625,10.688,1.77,2.962,4,5.012,7.757,5.012a7.5,7.5,0,0,0,7.5-7.5V46.506a1.5,1.5,0,0,0-3,0V49h-1V45.491a1.5,1.5,0,1,0-3,0V48h-1Z" transform="translate(-187.701 -110)" fill="#e8cb89"/>
+    </g>
+  </g>
+</svg>

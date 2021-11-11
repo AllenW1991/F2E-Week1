@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+  --text: #fff;
+  --titleText: #7baebe;
+  --contentText: #707070;
+  --buttonTagBG: #e8cb89;
+  --border: #ebebeb;
+  --shadow: #0000002e;
+  --navFooterBG: #a6cde0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .nav_container {
+  width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+  line-height: 90px;
+  color: var(--text);
+}
+
+nav .nav_container a {
+  color: var(--text);
+  font-size: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .nav_container a:hover {
+  color: #e8cb89;
+}
+
+nav .nav_container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav_container ul li {
+  margin-left: 48px;
+  font-size: 18px;
+}
+
+nav .nav_container ul li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .nav_container ul li:hover a {
+  color: #e8cb89;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container img {
+  display: block;
+  width: 100%;
+}
+
+.container .search {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 768px;
+}
+
+.container .search img {
+  display: block;
+  width: 567px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.container .search .search_section {
+  background: var(--text);
+  width: 768px;
+  height: 110px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.container .search .search_section button {
+  width: 142px;
+  height: 50px;
+  background: var(--buttonTagBG);
+  border-radius: 15px;
+  border: 0;
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .search .search_section select {
+  width: 270px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 0;
+  background: url("../TheF2E_week01/icon/slideMenuArrow.svg") no-repeat right 12px center;
+  background-color: var(--border);
+  background-size: 15px 12px;
+  cursor: pointer;
+  color: var(--contentText);
+}
+
+.container .search .search_section select:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

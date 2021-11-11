@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-slideMenuArrow">
+      <rect width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="slideMenuArrow" clip-path="url(#clip-slideMenuArrow)">
+    <path id="Polygon_2" data-name="Polygon 2" d="M15,0,30,25H0Z" transform="translate(30 28) rotate(180)" fill="#626262"/>
+  </g>
+</svg>

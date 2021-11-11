@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-share">
+      <rect width="33" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="share" clip-path="url(#clip-share)">
+    <g id="Group_96" data-name="Group 96" transform="translate(-209 -502)">
+      <g id="Group_72" data-name="Group 72" transform="translate(-581 -1616)">
+        <path id="mail-forward" d="M15.677,21.042a.557.557,0,0,1-.166.394l-4.482,4.482a.557.557,0,0,1-.394.166.564.564,0,0,1-.56-.56v-2.24H8.113c-3.773,0-5.947-.522-6.988,2.635,0,.359-1.142-.685-1.142-1.911A4.371,4.371,0,0,1,.52,21.891C2.267,18.9,5.242,18.8,8.113,18.8h1.961V16.56a.564.564,0,0,1,.56-.56.557.557,0,0,1,.394.166l4.482,4.482a.557.557,0,0,1,.167.394Z" transform="translate(799.17 2112.958)" fill="#7baebe"/>
+        <g id="Group_71" data-name="Group 71" transform="translate(792 2119)">
+          <g id="Ellipse_19" data-name="Ellipse 19" fill="none" stroke="#7baebe" stroke-width="3">
+            <circle cx="15" cy="15" r="15" stroke="none"/>
+            <circle cx="15" cy="15" r="13.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(209 502)" fill="none" stroke="#fff" stroke-width="4">
+        <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+        <circle cx="16.5" cy="16.5" r="14.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

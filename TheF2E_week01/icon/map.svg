@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-map">
+      <rect width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="map" clip-path="url(#clip-map)">
+    <g id="Group_16" data-name="Group 16" transform="translate(-13 62)">
+      <path id="map-2" data-name="map" d="M-3197.5-863.2l7.5-5.8v23.2l-7.5,5.8Zm-11.25,17.4V-869l9.375,5.8v22.233ZM-3220-864.167l9.375-3.867v23.2l-9.375,3.867Z" transform="translate(3233 808)" fill="#7baebe"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-arrowWithBorderRight_01_default">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="arrowWithBorderRight_01_default" clip-path="url(#clip-arrowWithBorderRight_01_default)">
+    <g id="Group_5" data-name="Group 5" transform="translate(0 44)">
+      <g id="Group_46" data-name="Group 46" transform="translate(-1270 -3975)">
+        <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(1270 3931)" fill="none" stroke="#7baebe" stroke-width="1">
+          <circle cx="25" cy="25" r="25" stroke="none"/>
+          <circle cx="25" cy="25" r="24.5" fill="none"/>
+        </g>
+        <g id="arrow_R" data-name="arrow R" transform="translate(1288.09 3942.375)">
+          <line id="Line_1" data-name="Line 1" x1="0.58" y2="18.41" transform="translate(0 0.41) rotate(-45)" fill="none" stroke="#7baebe" stroke-linecap="round" stroke-width="1"/>
+          <line id="Line_2" data-name="Line 2" x1="0.58" y1="18.41" transform="translate(13.41 13.821) rotate(45)" fill="none" stroke="#7baebe" stroke-linecap="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-linkArrow_hover">
+      <rect width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="linkArrow_hover" clip-path="url(#clip-linkArrow_hover)">
+    <g id="Group_15" data-name="Group 15" transform="translate(2 58)">
+      <g id="Group_63" data-name="Group 63" transform="translate(-207.998 -1515.997)">
+        <circle id="Ellipse_15" data-name="Ellipse 15" cx="15" cy="15" r="15" transform="translate(206 1458)" fill="#e8cb89"/>
+        <path id="arrow-right-circle" d="M62,47a15,15,0,1,0-4.394,10.606A15,15,0,0,0,62,47Zm-2.727,0a12.273,12.273,0,1,1-3.595-8.678A12.273,12.273,0,0,1,59.273,47ZM41.545,48.364h7.617L46.036,51.49a1.363,1.363,0,0,0,1.928,1.928l5.455-5.455a1.35,1.35,0,0,0,0-1.928L47.964,40.58a1.363,1.363,0,0,0-1.928,1.928l3.127,3.127H41.545a1.364,1.364,0,0,0,0,2.727Z" transform="translate(174 1426)" fill="#fff"/>
+        <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(206 1458)" fill="none" stroke="#e8cb89" stroke-width="3">
+          <circle cx="15" cy="15" r="15" stroke="none"/>
+          <circle cx="15" cy="15" r="13.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

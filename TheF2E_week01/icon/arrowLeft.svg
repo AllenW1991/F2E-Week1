@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-arrowLeft">
+      <rect width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="arrowLeft" clip-path="url(#clip-arrowLeft)">
+    <g id="Group_2" data-name="Group 2" transform="translate(2 55)">
+      <g id="arrow_L" data-name="arrow L" transform="translate(6.501 -53.5)">
+        <path id="Union_3" data-name="Union 3" d="M-2048.18-457.681l12.631,13.3Zm13-13.7-12.631,13.306Z" transform="translate(2048.179 471.376)" fill="none" stroke="#7baebe" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

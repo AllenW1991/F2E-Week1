@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-slideDown_hover">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="slideDown_hover" clip-path="url(#clip-slideDown_hover)">
+    <g id="Group_66" data-name="Group 66" transform="translate(-961.5 -778)">
+      <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(972 779)" fill="none" stroke="#292929" stroke-width="2">
+        <rect width="29" height="48" rx="14" stroke="none"/>
+        <rect x="1" y="1" width="27" height="46" rx="13" fill="none"/>
+      </g>
+      <line id="Line_13" data-name="Line 13" y2="7" transform="translate(986.5 809.5)" fill="none" stroke="#292929" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

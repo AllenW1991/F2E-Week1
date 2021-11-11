@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="92" viewBox="0 0 45 92">
+  <defs>
+    <clipPath id="clip-scrollDown_default">
+      <rect width="45" height="92"/>
+    </clipPath>
+  </defs>
+  <g id="scrollDown_default" clip-path="url(#clip-scrollDown_default)">
+    <g id="Group_18" data-name="Group 18">
+      <path id="Path_1" data-name="Path 1" d="M45,92h0Z" fill="#fff"/>
+      <path id="Union_1" data-name="Union 1" d="M9.769,64.364,4.884,70.471ZM0,64.364,4.884,70.47Z" transform="translate(17.616 -1)" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_2" data-name="Path 2" d="M21.144,0a21.532,21.532,0,0,1,21.37,21.37A20.986,20.986,0,0,1,21.371,42.514,21.532,21.532,0,0,1,0,21.144" transform="translate(23 39.874) rotate(45)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_1" data-name="Line 1" y2="69" transform="translate(22.615)" fill="none" stroke="#666" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
