@@ -92,7 +92,7 @@ nav .nav_container ul li:hover a {
           align-items: center;
 }
 
-.container img {
+.container .mainImg {
   display: block;
   width: 100%;
 }
@@ -167,4 +167,4 @@ nav .nav_container ul li:hover a {
 .container .search .search_section select:focus {
   outline: none;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index_style.css.map */
