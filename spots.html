@@ -13,13 +13,26 @@
   >
   <link
     rel="stylesheet"
-    href="./scss/style.css"
+    href="./scss/index_style.css"
   >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap"
+    rel="stylesheet"
+  >
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'
+    integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=='
+    crossorigin='anonymous'
+  ></script>
+  <script
+    src="./main.js"
+    type="module"
+  ></script>
   <title>TAIWAN TRAVEL SPOTS</title>
 </head>
 
 <body>
-  <nav>
+  <nav class="spots_nav">
     <div class="nav_container">
       <a href="">TAIWAN TRAVEL</a>
       <ul class="nav_list">
@@ -35,18 +48,44 @@
     <img
       src="./TheF2E_week01/Banner04.jpg"
       alt="Road"
+      class="bannerImg"
     >
     <div class="wrap">
       <div class="pageProcess">
         <span>首頁 ></span>
-        <span id="page-spots-search">景點查詢</span>
+        <span
+          id="page-spots-search"
+          class="current_page"
+        >景點查詢</span>
       </div>
       <div class="spots_slides">
         <h2>熱門景點</h2>
         <ul>
+          <img
+            src="./TheF2E_week01/icon/arrowLeft.svg"
+            alt=""
+            class="slideButtonLeft"
+          >
+          <img
+            src="./TheF2E_week01/icon/arrowRight.svg"
+            alt=""
+            class="slideButtonRight"
+          >
           <li>
             <img
               src='https://picsum.photos/444/212?random=1'
+              alt=""
+            >
+          </li>
+          <li>
+            <img
+              src='https://picsum.photos/444/212?random=2'
+              alt=""
+            >
+          </li>
+          <li>
+            <img
+              src='https://picsum.photos/444/212?random=3'
               alt=""
             >
           </li>
@@ -57,48 +96,159 @@
           type="text"
           placeholder="關鍵字查詢"
         >
+        <img
+          src="./TheF2E_week01/icon/search.svg"
+          alt=""
+          class="searchIcon"
+        >
+        <img
+          src="./TheF2E_week01/icon/arrangement.svg"
+          alt="arrangement"
+          class="arrangement"
+        >
+        <span class="orderTitle">排序:最熱門</span>
         <select
           name="order"
           id="spots-order"
         >
-          <img
-            src="./TheF2E_week01/icon/arrangement.svg"
-            alt="arrangement"
-          >
-          <option value="">熱門度</option>
+          <option
+            selected="selected"
+            disabled="disabled"
+            style='display: none'
+            value=''
+          ></option>
+          <option value="">最熱門</option>
+          <option value="">最新</option>
         </select>
       </div>
       <article>
-        <sidebar>
-          <span>篩選內容</span>
+        <aside>
           <h2>地區/縣市</h2>
+          <img
+            src=""
+            alt=""
+          >
           <select
-            name=""
-            id=""
+            name="area"
+            id="search-area"
           >
             <option value="">選擇地區</option>
+            <option value="North">北部地區</option>
+            <option value="Central">中部地區</option>
+            <option value="South">南部地區</option>
+            <option value="East">東部地區</option>
+            <option value="Outer">離島地區</option>
           </select>
           <select
-            name=""
-            id=""
+            name="city"
+            id="search-city"
           >
-            <option value=""> 選擇縣市</option>
-            <hr>
+          </select>
+          <div class="spotClass">
             <h2>類別</h2>
             <ul>
-              <li><input type="text">全部</li>
-              <li><input type="text">自然風景</li>
-              <li><input type="text">歷史文化</li>
-              <li><input type="text">觀光遊憩</li>
-              <li><input type="text">宗教巡禮</li>
-              <li><input type="text">夜市商圈</li>
-              <li><input type="text">文藝之旅</li>
+              <li><input
+                  type="checkbox"
+                  id="all"
+                ><label for="all">全部</label></li>
+              <li><input
+                  type="checkbox"
+                  id="nature"
+                ><label for="nature">自然風景</label></li>
+              <li><input
+                  type="checkbox"
+                  id="history"
+                ><label for="history">歷史文化</label></li>
+              <li><input
+                  type="checkbox"
+                  id="travel"
+                ><label for="travel">觀光遊憩</label></li>
+              <li><input
+                  type="checkbox"
+                  id="religion"
+                ><label for="religion">宗教巡禮</label></li>
+              <li><input
+                  type="checkbox"
+                  id="nightmarket"
+                ><label for="nightmarket">夜市商圈</label></li>
+              <li><input
+                  type="checkbox"
+                  id="activity"
+                ><label for="activity">文藝之旅</label></li>
+
+              <li></li>
+
             </ul>
-          </select>
-        </sidebar>
+          </div>
+          <button class="search-button">SEARCH</button>
+        </aside>
+        <section>
+          <ul id="spotsCards">
+            <li class="spotsCard">
+              <img
+                src='https://picsum.photos/324/240?random=1'
+                alt='pic'
+              >
+              <div class="cardContent">
+                <div class="cardContentTitle">
+                  <h2>紫坪</h2>
+                  <label for="nature">自然風景</label>
+                </div>
+                <div class="cardContentText">
+                  <p>帆船鼻位於綠島東南角，有「綠島地毯」之稱，可由朝日溫泉售票口旁邊的小徑沿步道而上。由於地形突出，地勢又高出四周，屬東北季季風可長驅直入的衝風帶；再加上後天的放牧 ......</p>
+                </div>
+                <div class="cardContentInfo">
+                  <div class="location_opentime">
+                    <img
+                      src=""
+                      alt=""
+                    >
+                    <span>臺東縣綠島鄉</span>
+                    <img
+                      src=""
+                      alt=""
+                    >
+                    <span>全天開放</span>
+                  </div>
+                  <div class="spotLike">
+                    <img
+                      src=""
+                      alt=""
+                    >
+                    <span>1293</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="pages">
+            <ul>
+              <li>
+                <img
+                  src="./TheF2E_week01/icon/arrowLeft.svg"
+                  alt="arrowLeft"
+                >
+              </li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>
+                <img
+                  src="./TheF2E_week01/icon/arrowRight.svg"
+                  alt="arrowRight"
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
       </article>
     </div>
   </div>
+  <footer>
+    <div class="footerText">
+      <span>TaiwanTravel © 2021 Designer Vum. Engineer [enter your name]. All rights reserved.</span>
+    </div>
+  </footer>
 </body>
 
 </html>
