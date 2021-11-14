@@ -481,4 +481,186 @@ h2 {
 .container .wrap article aside .spotClass li input:checked + label:after {
   opacity: 1;
 }
+
+.container .wrap section .spotsCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 826px;
+  height: 240px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 4px 8px #0000004b;
+          box-shadow: 0px 4px 8px #0000004b;
+  margin-bottom: 48px;
+}
+
+.container .wrap section .spotsCard .cardPic {
+  width: 342px;
+  height: 240px;
+  border-radius: 15px 0 0 15px;
+}
+
+.container .wrap section .spotsCard .cardContents {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentTitle h2 {
+  margin-bottom: 8px;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentTitle .spotTag {
+  background: var(--buttonTagBG);
+  color: var(--text);
+  width: 76px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentInfo .location_opentime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentInfo .location_opentime .cardIcon {
+  width: 16px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 8px;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentInfo .location_opentime .cardContentInfo-loc {
+  margin-right: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentInfo .location_opentime .cardContentInfo-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentInfo .spotLike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrap section .spotsCard .cardContents .cardContentInfo .spotLike .clickIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.container .wrap section .pages {
+  margin-top: 70px;
+}
+
+.container .wrap section .pages img {
+  width: 15px;
+  height: 15px;
+}
+
+.container .wrap section .pages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.container .wrap section .pages ul li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 6px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .wrap section .pages ul li:hover {
+  color: var(--text);
+  background: var(--titleText);
+}
+
+.container .wrap section .pages ul li:first-child {
+  background: #e6e6e6;
+}
+
+.container .wrap section .pages ul li:last-child {
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 70px;
+  height: 80px;
+  background: var(--titleText);
+  text-align: center;
+  color: var(--text);
+  line-height: 80px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e8cb89;
+}
 /*# sourceMappingURL=index_style.css.map */
