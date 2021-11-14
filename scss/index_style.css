@@ -544,6 +544,11 @@ h2 {
   font-size: 14px;
 }
 
+.container .wrap section .spotsCard .cardContents .cardContentText {
+  height: 74px;
+  overflow: hidden;
+}
+
 .container .wrap section .spotsCard .cardContents .cardContentInfo {
   display: -webkit-box;
   display: -ms-flexbox;

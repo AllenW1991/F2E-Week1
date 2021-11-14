@@ -372,6 +372,7 @@ h2 {
           box-sizing: border-box;
           padding: 18px;
           height: 240px;
+
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -392,6 +393,10 @@ h2 {
               text-align: center;
               font-size: 14px;
             }
+          }
+          .cardContentText {
+            height: 74px;
+            overflow: hidden;
           }
 
           .cardContentInfo {

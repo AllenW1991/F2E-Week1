@@ -1,19 +1,80 @@
 $(function () {
-
-
-
-
   $.ajax({
     type: 'GET',
     url: 'https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot?$top=10&$format=JSON', //欲呼叫之API網址(此範例為台鐵車站資料)
     dataType: 'json',
     headers: GetAuthorizationHeader(),
-    success: function (data) {
+    success: function render(data) {
+      let str = "";
       data.forEach(item => {
-        console.log(item);
-      });
+        if (item.OpenTime === "Sun 24 hours；Mon 24 hours；Tue 24 hours；Wed 24 hours；Thu 24 hours；Fri 24 hours；Sat 24 hours" || "Sun 24 hours；Sun 24 hours；Mon 24 hours；Mon 24 hours；Tue 24 hours；Tue 24 hours；Wed 24 hours；Wed 24 hours；Thu 24 hours；Thu 24 hours；Fri 24 hours；Fri 24 hours；Sat 24 hours；Sat 24 hours") {
+          item.OpenTime = "全天候開放";
+        }
+        if (item.Class1 === undefined) {
+          item.Class1 = "自然風景類";
+        }
+        if (item.Picture.PictureUrl1 === undefined) {
+          item.Picture.PictureUrl1 = "TheF2E_week01/notshow1.png"
+        }
+        console.log(item.Picture.PictureUrl1);
+        str += `
+        <li class="spotsCard">
+              <img
+                src='${item.Picture.PictureUrl1}'
+                alt='pic'
+                class="cardPic"
+              >
+              <div class="cardContents">
+                <div class="cardContent">
+                  <div class="cardContentTitle">
+                    <h2>${item.Name}</h2>
+                    <span class="spotTag">${item.Class1}</span>
+                  </div>
+                  <div class="cardContentText">
+                    <p>${item.DescriptionDetail}</p>
+                  </div>
+                </div>
+                <div class="cardContentInfo">
+                  <div class="location_opentime">
+                    <div class="cardContentInfo-loc">
+                      <img
+                        src="./TheF2E_week01/icon/site.svg"
+                        alt="location"
+                        class="cardIcon"
+                      >
+                      <span>${item.Address.substr(0, 6)}</span>
+                    </div>
+                    <div class="cardContentInfo-time">
+                      <img
+                        src="./TheF2E_week01/icon/time.svg"
+                        alt="clock"
+                        class="cardIcon"
+                      >
+                      <span>${item.OpenTime}</span>
+                    </div>
+                  </div>
+                  <div class="spotLike">
+                    <img
+                      src="./TheF2E_week01/icon/click.svg"
+                      alt="touch"
+                      class="clickIcon"
+                    >
+                    <span id="click-number">1293</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+        `
+      })
+
+      $("#spotsCards").html(str);
+
+    },
+    error: function () {
+      console.log(123);
     }
   });
+
 });
 
 function GetAuthorizationHeader() {
