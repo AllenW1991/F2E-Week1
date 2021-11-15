@@ -1,7 +1,9 @@
 $(function () {
+  let infoNumber = 30;
+
   $.ajax({
     type: 'GET',
-    url: 'https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot?$top=20&$format=JSON', //欲呼叫之API網址(此範例為台鐵車站資料)
+    url: `https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot?$top=${infoNumber}&$format=JSON`,
     dataType: 'json',
     headers: GetAuthorizationHeader(),
     success: function render(data) {
@@ -66,15 +68,28 @@ $(function () {
             </li>
         `
       })
-
       $("#spotsCards").html(str);
-
     },
-    error: function () {
-      console.log(123);
-    }
+    
   });
+  $(".spots_slide").each(function () {
+    let slideImgs = $(this).find("li > img"),
+      slideImgsCount = slideImgs.lingth,
+      currentIndex = 0;
 
+    slideImgs.eq(currentIndex).fadeIn();
+
+    setInterval(showNextSlide, 5000);
+
+    function showNextSlide() {
+      let nextIndex = (currentIndex + 1) % slideImgsCount;
+      console.log(nextIndex);
+      slideImgs.eq(currentIndex).fadeOut();
+      slideImgs.eq(nextIndex).fadeIn();
+      currentIndex = nextIndex;
+    }
+
+  })
 });
 
 function GetAuthorizationHeader() {

@@ -249,48 +249,69 @@ h2 {
 
 .container .wrap .spots_slides {
   margin-bottom: 66px;
-}
-
-.container .wrap .spots_slides h2 {
-  margin-bottom: 35px;
-  color: var(--titleText);
-}
-
-.container .wrap .spots_slides ul {
+  max-width: 1160px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
   position: relative;
+}
+
+.container .wrap .spots_slides .slideButtonLeft {
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 25%;
+  top: calc(50% - 15px);
+}
+
+.container .wrap .spots_slides .slideButtonRight {
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 72%;
+  top: calc(50% - 15px);
+}
+
+.container .wrap .spots_slides .slide_slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
-  width: 100%;
 }
 
-.container .wrap .spots_slides ul .slideButtonLeft {
-  width: 13px;
-  height: 27px;
+.container .wrap .spots_slides .slide_slide .slideInfo {
+  width: 408px;
+  padding: 0 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
-  top: calc(50% - 14px);
-  left: 26%;
-  cursor: pointer;
+  bottom: 18px;
+  color: var(--text);
+  font-size: 16px;
 }
 
-.container .wrap .spots_slides ul .slideButtonRight {
-  width: 13px;
-  height: 27px;
-  position: absolute;
-  top: calc(50% - 14px);
-  right: 26%;
-  cursor: pointer;
+.container .wrap .spots_slides .slide_slide .slideInfo a {
+  color: var(--text);
 }
 
-.container .wrap .spots_slides ul li img {
+.container .wrap .spots_slides .slide_slide li {
+  margin: 0 52px;
+}
+
+.container .wrap .spots_slides .slide_slide li img {
   width: 444px;
   height: 212px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
-  margin: 0 52px;
 }
 
 .container .wrap .search_order {
