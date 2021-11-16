@@ -186,6 +186,7 @@ h2 {
         position: absolute;
         left: 25%;
         top: calc(50% - 15px);
+        z-index: 10;
       }
       .slideButtonRight {
         width: 25px;
@@ -198,6 +199,9 @@ h2 {
       .slide_slide {
         display: flex;
         justify-content: center;
+        position: relative;
+        width: 444px;
+        height: 260px;
         .slideInfo {
           width: 408px;
           padding: 0 18px;
@@ -211,6 +215,7 @@ h2 {
             color: var(--text);
           }
         }
+
         li {
           margin: 0 52px;
           img {
@@ -219,6 +224,49 @@ h2 {
             object-fit: cover;
             border-radius: 20px;
           }
+          .positionLeft {
+            img {
+              opacity: 0.1;
+              filter: blur(10px);
+            }
+          }
+        }
+        .positionLeft,
+        .positionRight {
+          span {
+            display: none;
+          }
+          img {
+            opacity: 0.5;
+            height: 179px;
+          }
+        }
+        .slideOut {
+          position: absolute;
+          left: -600px;
+          top: calc(50% - 90px);
+          transition: 0.5s;
+          img{
+            height: 179px;
+          }
+        }
+        .positionLeft {
+          position: absolute;
+          left: -240px;
+          top: calc(50% - 90px);
+          transition: 0.8s;
+        }
+        .positionMid {
+          position: absolute;
+          top: calc(50% - 106px);
+          left: 300px;
+          transition: 0.8s;
+        }
+        .positionRight {
+          position: absolute;
+          left: 840px;
+          top: calc(50% - 90px);
+          transition: 0.8s;
         }
       }
     }

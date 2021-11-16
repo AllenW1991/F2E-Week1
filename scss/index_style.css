@@ -263,6 +263,7 @@ h2 {
   position: absolute;
   left: 25%;
   top: calc(50% - 15px);
+  z-index: 10;
 }
 
 .container .wrap .spots_slides .slideButtonRight {
@@ -281,6 +282,9 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  width: 444px;
+  height: 260px;
 }
 
 .container .wrap .spots_slides .slide_slide .slideInfo {
@@ -312,6 +316,59 @@ h2 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+}
+
+.container .wrap .spots_slides .slide_slide li .positionLeft img {
+  opacity: 0.1;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.container .wrap .spots_slides .slide_slide .positionLeft span,
+.container .wrap .spots_slides .slide_slide .positionRight span {
+  display: none;
+}
+
+.container .wrap .spots_slides .slide_slide .positionLeft img,
+.container .wrap .spots_slides .slide_slide .positionRight img {
+  opacity: 0.5;
+  height: 179px;
+}
+
+.container .wrap .spots_slides .slide_slide .slideOut {
+  position: absolute;
+  left: -600px;
+  top: calc(50% - 90px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .wrap .spots_slides .slide_slide .slideOut img {
+  height: 179px;
+}
+
+.container .wrap .spots_slides .slide_slide .positionLeft {
+  position: absolute;
+  left: -240px;
+  top: calc(50% - 90px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.container .wrap .spots_slides .slide_slide .positionMid {
+  position: absolute;
+  top: calc(50% - 106px);
+  left: 300px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.container .wrap .spots_slides .slide_slide .positionRight {
+  position: absolute;
+  left: 840px;
+  top: calc(50% - 90px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .container .wrap .search_order {

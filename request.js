@@ -1,5 +1,6 @@
 $(function () {
-  let infoNumber = 30;
+  let infoNumber = 5;
+
 
   $.ajax({
     type: 'GET',
@@ -7,19 +8,24 @@ $(function () {
     dataType: 'json',
     headers: GetAuthorizationHeader(),
     success: function render(data) {
-      let str = "";
-      data.forEach(item => {
-        if (item.OpenTime === "Sun 24 hours；Mon 24 hours；Tue 24 hours；Wed 24 hours；Thu 24 hours；Fri 24 hours；Sat 24 hours" || "Sun 24 hours；Sun 24 hours；Mon 24 hours；Mon 24 hours；Tue 24 hours；Tue 24 hours；Wed 24 hours；Wed 24 hours；Thu 24 hours；Thu 24 hours；Fri 24 hours；Fri 24 hours；Sat 24 hours；Sat 24 hours") {
-          item.OpenTime = "全天候開放";
-        }
-        if (item.Class1 === undefined) {
-          item.Class1 = "自然風景類";
-        }
-        if (item.Picture.PictureUrl1 === undefined) {
-          item.Picture.PictureUrl1 = "TheF2E_week01/notshow1.png"
-        }
-        console.log(item.Picture.PictureUrl1);
-        str += `
+
+      function spotsShow() {
+        let str = "";
+        let timeformat = "Sun 24 hours；Mon 24 hours；Tue 24 hours；Wed 24 hours；Thu 24 hours；Fri 24 hours；Sat 24 hours";
+
+        let timeformat2 = "Sun 24 hours；Sun 24 hours；Mon 24 hours；Mon 24 hours；Tue 24 hours；Tue 24 hours；Wed 24 hours；Wed 24 hours；Thu 24 hours；Thu 24 hours；Fri 24 hours；Fri 24 hours；Sat 24 hours；Sat 24 hours";
+        data.forEach(item => {
+          if (item.OpenTime === timeformat || timeformat2) {
+            item.OpenTime = "全天候開放";
+          }
+          if (item.Class1 === undefined) {
+            item.Class1 = "自然風景類";
+          }
+          if (item.Picture.PictureUrl1 === undefined) {
+            item.Picture.PictureUrl1 = "TheF2E_week01/notshow1.png"
+          }
+          console.log(item.Picture.PictureUrl1);
+          str += `
         <li class="spotsCard">
               <img
                 src='${item.Picture.PictureUrl1}'
@@ -67,30 +73,36 @@ $(function () {
               </div>
             </li>
         `
-      })
-      $("#spotsCards").html(str);
-    },
-    
-  });
-  $(".spots_slide").each(function () {
-    let slideImgs = $(this).find("li > img"),
-      slideImgsCount = slideImgs.lingth,
-      currentIndex = 0;
+        })
+        $("#spotsCards").html(str);
+      }
 
-    slideImgs.eq(currentIndex).fadeIn();
+      function showSlide() {
+        let str = "";
+        data.forEach(item => {
+          console.log(item.Picture.PictureUrl1);
+          str += `
+          <li >
+            <div class="slideInfo ">
+              <span>我是景點資訊的拉</span>
+              <span><a href="">看更多</a></span>
+            </div>
+            <img
+              src='${item.Picture.PictureUrl1}'
+              alt='123'
+            >
+          </li>
+          `
+        })
+        $(".slide_slide").html(str);
+      }
+      spotsShow();
+      showSlide();
 
-    setInterval(showNextSlide, 5000);
-
-    function showNextSlide() {
-      let nextIndex = (currentIndex + 1) % slideImgsCount;
-      console.log(nextIndex);
-      slideImgs.eq(currentIndex).fadeOut();
-      slideImgs.eq(nextIndex).fadeIn();
-      currentIndex = nextIndex;
     }
-
-  })
+  });
 });
+
 
 function GetAuthorizationHeader() {
   var AppID = '118d129a5f4c422e9b1ad2fdff1c5d24';
